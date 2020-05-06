@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+<title>Weather Report</title>
+{% endblock %}
+
+{% block body %}
+
+<h2 class="head1">WELCOME TO THE WEATHER REPORT WEBSITE HOMEPAGE</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            
+                            <h4>Welcome Onboard {{ name }}!<img class="master-emoji" src="{{ url_for('static', filename='images/welcome2.jpg') }} "> </h4>
+                            <h4> to weather.Report website</h4>
+                            <p class="para">My name is <span class= "img-hover">Hamid Ashkan</span>
+                                the designer and developer of this humble experimental web site.
+                                To be honest with you, this is my first experience of making such a thing!
+                                As a rookie web desiner, I hope you'd enjoy your visit here! A warm welcome and lots 
+                                of good wishes on becoming part of my growing one-man-team !. </p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h4>What Have I Done? <img class="master-emoji" src="{{ url_for('static', filename='images/whatsup.jpg') }} "></h4>
+                                <p class="para">I have design and implemented this web site as to fulfil  
+                                    my coursework 'project0' project featuring Edx's institution project just 
+                                    using basic tools such as HTML, CSS and SCSS.
+                                    FYI this course is titled as <span>Web site programming with Javascrip and Python.</span> running online.
+                                 </p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <h4>What's Next.?<img class="master-emoji" src="{{ url_for('static', filename='images/nerd.jpg') }} "></h4>
+                           <p class="para">Since literally this website has been implemented as a "static" linked .html pages, 
+                               therefore it's not 
+                               supposed to go any far! but in the next step,  by using SQL and API,
+                               I'm planning to desin a totally more efficient version both dynamic and real-time which I  expected to BLOW UP! hopefully. 
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                           <h4>What's Edx.?<img class="master-emoji" src="{{ url_for('static', filename='images/graduate.jpg') }} "></h4>
+                            <p class="para">
+                                <span><a class="anchor" href= "https://Edx.org">Edx</a></span> is a massive open online course (MOOC) provider. 
+                                It hosts online university-level courses in a wide range of disciplines to a worldwide student body, 
+                                including some courses at no charge. It also conducts research into 
+                                learning based on how people use its platform. edX is a nonprofit organization 
+                                and runs on the free Open edX open-source software platform.
+                                The <span>M.I.T</span> Massachusetts Institute of Technology and <span>Harvard University</span>  created edX in May 2012. 
+                                More than 140 schools, nonprofit organizations, and corporations offer or plan to offer 
+                                courses on the edX website. As of 29 December 2018, edX has around 18 million 
+                                students taking more than 2,200 courses online.</p>
+                        </div>
+                    </div>
+                </div>
+    {% endblock %}
+    
+

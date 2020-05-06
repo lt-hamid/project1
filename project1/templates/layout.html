@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>
+        {% block title %}
+        {% endblock %}
+    </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href= "{{ url_for('static', filename='main.css') }}">
+        <img class="master" src= "{{ url_for('static', filename='images/weather.conditions.3D.jpg') }} ">
+    </head>
+    <body>
+      
+       <div id="nav-bar-div">
+        <div id="nav-bar">
+           
+            <ul id="ul-list">
+                
+                <li > <a  href="{{ url_for('home') }}">Home</a></li> 
+                 | 
+                <li> <a href="{{ url_for('about') }}">About</a></li>
+                | 
+                <li> <a href="{{ url_for('citiesweather') }}" >Weather</a></li>
+                | 
+                <li> <a href="{{ url_for('contact') }}">Contact me</a></li>
+                | 
+                <li> <a href="/">Log In</a></li>
+            </ul>
+        </div>
+    </div>
+        {% block body %}
+        {% endblock %}
+<br><br>
+        <div class="footer">
+            Stay Connected:      
+        </div>
+    </body>
+</html>

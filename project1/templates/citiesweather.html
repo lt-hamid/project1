@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+<title>Weather Report</title>
+{% endblock %}
+
+{% block body %}
+
+                <h3>Weather in some cities</h3>
+
+      <table class="table-weather" >
+  <tr>
+    <th>Country</th>
+    <th>City</th>
+    <th>Weather</th>
+    <th>Temp. Hi/Lo</th>
+  </tr>
+  <tr>
+    <td >G.B.</td>
+    <td>London</td>
+    <td style="width:30px" ><img class="symbol" src="{{ url_for('static', filename='images/sunny.jpg') }} " ></td>
+    <td>72F/50F</td>
+  </tr>
+  <tr>
+    <td>G.B.</td>
+    <td>Manchester</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/rainy.jpg') }} " ></td>
+    <td>70F/52F</td>
+  </tr>
+  <tr>
+    <td>G.B.</td>
+    <td>Birminghan</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/partly-cloudy.jpg') }} "  ></td>
+    <td>75F/46F</td>
+  </tr>
+  <tr>
+  <td>France</td>
+    <td>Paris</td>
+    <td><img class="symbol" src= "{{ url_for('static', filename='images/cloudy.jpg') }} "></td>
+    <td>72F/50F</td>
+  </tr>
+  <tr>
+    <td>France</td>
+    <td>Marseille</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/sunny.jpg') }} " ></td>
+    <td>88F/55F</td>
+  </tr>
+  <tr>
+    <td>France</td>
+    <td>Lyon</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/showers-thundry.jpg') }} "  ></td>
+    <td>81F/50F</td>
+  </tr>
+  
+  <tr>
+    <td>USA</td>
+    <td>Seattle</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/snowy.jpg') }} "  ></td>
+    <td>31F/22F</td>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Lax</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/partly-cloudy.jpg') }} "  ></td>
+    <td>65F/50F</td>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Chicago</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/snowy.jpg') }} " ></td>
+    <td>25F/10F</td>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Miami</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/partly-cloudy.jpg') }} " ></td>
+    <td>80F/60F</td>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>Atlanta</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/sunny.jpg') }} "  ></td>
+    <td>65F/50F</td>
+  </tr>
+  <tr>
+    <td>USA</td>
+    <td>New York</td>
+    <td><img class="symbol" src="{{ url_for('static', filename='images/overcast.jpg') }} "  ></td>
+    <td>325F/20F</td>
+  </tr>
+  
+</table>
+
+{% endblock %}
+        
+   

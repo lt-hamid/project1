@@ -1,0 +1,132 @@
+
+	booked.modules.initTranslation = function() {
+		booked.modules.translations.addVocab('en_US', {
+		// availbox
+		"room_no":        "Room [NUMBER]",
+		"adults_title":   "Adults",
+		"children_title": "Children",
+		"rooms_guests":   "Rooms and Guests:",
+		"age_title":      "Child's age",
+		"plu_rooms":      "[NUMBER] room|[NUMBER] rooms",
+		"plu_adults":     "[NUMBER] Adult|[NUMBER] Adults",
+		"plu_children":   "[NUMBER] Child|[NUMBER] Children",
+		"plu_nights":     "[NUMBER] night|[NUMBER] nights",
+		"paxes":          "Passengers:",
+		"pax":            "Passengers",
+		"ch_age_error_one": "Specify the age of a child",
+		"ch_age_error_plu": "Specify the age of children",
+
+		"rooms_number":   "Select number of rooms:",
+
+		// autocomplete search
+		"s-areas":        "Cities/Areas",
+		"s-hotel":        "Hotels",
+		"s-landmarks":    "Landmarks",
+		"s-airports":     "Airports",
+		"s-all":          "All results",
+
+		"plu_more_rooms": "Show [NUMBER] more room type|Show [NUMBER] more room types",
+		"plu_stops":      "[NUMBER] stop|[NUMBER] stops",
+		"stops_0":        "Direct",
+
+		// map
+		"plu_reviews":    "[NUMBER] review|[NUMBER] reviews",
+		"show_details":   "Show details",
+
+
+		// reviews
+		"rating_1":  "Guest rating",
+		"rating_2":  "Guest rating",
+		"rating_3":  "Guest rating",
+		"rating_4":  "Guest rating",
+		"rating_5":  "Good",
+		"rating_6":  "Very good",
+		"rating_7":  "Fabulous",
+		"rating_8":  "Superb",
+		"rating_9":  "Exceptional",
+		"rating_10": "Exclusive",
+
+		//multybooking
+		"multy_booking_select":   "Please select your [ORDER_ROOMS] for [PERSONS]",
+		"order_rooms_1":  "first room",
+		"order_rooms_2":  "second room",
+		"order_rooms_3":  "third room",
+		"order_rooms_4":  "fourth room",
+		"order_rooms_5":  "fifth room",
+		"order_rooms_6":  "sixth room",
+		"plu_for_adults":     "[NUMBER] adult|[NUMBER] adults",
+		"plu_for_child":   "and [NUMBER] child|and [NUMBER] children",
+		"plu_number_rooms_avail":   "([NUMBER] room available)|([NUMBER] rooms available)",
+		"selected_rooms":   "You have selected [NUMBER_ROOMS]",
+		"click_to_select":   "Click to select your [ORDER_ROOMS] for [PERSONS]",
+		"selected_room_1":  "one room",
+		"selected_room_2":  "two rooms",
+		"selected_room_3":  "three rooms",
+		"selected_room_4":  "four rooms",
+		"selected_room_5":  "five rooms",
+		"selected_room_6":  "six rooms",
+
+		
+				"dist":   "[DISTANCE] km from [LANDMARK]",
+				"dist-m": "[DISTANCE] m from [LANDMARK]",
+			
+
+		"from":      "From",
+		"close-map": "close",
+
+
+
+		//new hotel page, check avail form, gallery, calendar
+		"av_room":  "room",
+		"av_adult":  "Adult",
+		"av_child":  "Child",
+		"av_children_age":  "Child's age",
+		"av_add_room":  "Add a room",
+		"plu_hotel_photos_gallery":   "[NUMBER] photo|[NUMBER] photos",
+		"plu_guests_av":   "<span>[NUMBER] </span> Guest|<span>[NUMBER]</span>Guests",
+		"plu_rooms_av":   "[NUMBER] Room|[NUMBER] Rooms",
+		"calendar_phrase":   "When do you plan to lodge in",
+		"travelling_with_group_gb":   "Traveling with a Group?",
+		"get_group_rate_gb":   "Get a Group Rate",
+		"map_hotel_details":   "Details",
+		"room_setting":   "Room settings",
+		"plu_hotels_search":   "We've checked [NUMBER] option nearby|We've checked [NUMBER] options nearby",
+		"apply":   "Apply",
+		"guests_count_form":   "Number of guests",
+		"av_children":   "Children",
+		"plu_age_children":   "Child's age|Children's ages",
+		"popup_change_price":   "The price at this property has changed from [PRICE_OLD] to [PRICE_NEW].",
+		"popup_change_room":   "The room you selected is not available. Would you like to book [ROOM TYPE] at the price of [PRICE] instead?",
+		"popup_change_policy":   "The rate of your booking has changed from Free cancellation to <strong>Non-refundable</strong>.",
+		"free_cancellation":   "Free cancellation before [DATE]",
+		"room_facilities":   "Room Facilities:",
+		"room_description":   "Room Description:",
+		"room_sqm":   "[METERS] m²",
+
+		//hotel map vocabs
+		"m_popup_nearby":   "Nearby",
+		"m_popup_restaurants":   "Restaurants",
+		"m_popup_city_landmarks":   "City landmarks",
+		"m_popup_back_to_hotel":   "Show hotel on map",
+		"m_popup_legend_title":   "Legend",
+		"m_popup_legend_hotels":   "Hotels",
+		"m_popup_legend_apartments":   "Apartments",
+		"m_popup_legend_villas":   "Villas",
+		"m_popup_legend_hostels":   "Hostels",
+		"m_popup_show_on_map":   "Show on map:",
+		"m_popup_show_property_on_map":   "Show [PROPERTY_TYPE] on map",
+
+        //hotel list vocabs
+        "hl_more":   "More",
+		"plu_rooms_found":   "[NUMBER] room found from|[NUMBER] rooms found from",
+		"plu_view_rooms":   "View room|View rooms",
+
+		//hotellist map vocabs
+		"price_from_hl":   "Price from",
+		"go_to_list":   "Back to list",
+		"per_night_hl":   "per night",
+		"filter_by":   "Filter by"});
+	}
+
+
+

@@ -1,0 +1,47 @@
+<!-- extend base layout -->
+{% extends "layout.html" %}
+
+{% block heading %}
+    First Page index.html
+{% endblock %}
+
+{% block body %}
+
+        <h3>Log In</h3>
+    <form action="{{ url_for('home') }}" method="POST">
+       
+        <div class="WeatherContainer">
+            <table class="Weather" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="2">
+                        <label for="Sign-in">Sign in:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+
+                        <label for="name">First Name:</label>
+                        <input type="text" name="name" placeholder="Enter Your First Name">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="start">Date of birth: </label>
+                        <input type="date" id="start" name="trip-start" class="SignInFormField"
+                            value="2017-07-22"
+                            min="2015-01-01" max="2018-12-31">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <button>Submit</button>
+                    </td>
+                </tr>
+        </table>
+    </div>
+        
+        
+        <!--<img src= "{{ url_for('static', filename='images/smiling-sun.jpg') }} ">-->
+    </form>
+{% endblock %}

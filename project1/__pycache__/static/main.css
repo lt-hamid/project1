@@ -1,0 +1,225 @@
+/* master background-color */
+.table-weather {
+  line-height: 2.0;
+  border: 1px solid burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  column-span: 2;
+width: 60%; }
+
+#nav-bar-div {
+  display: inline;
+  font-size: 18px; }
+
+#ul-list li {
+  display: inline;
+  color: yellow; }
+
+#nav-bar {
+
+  size: 50%; }
+
+a {
+  color: #929296;
+  padding: left;
+  font-weight: thick;
+  font-size: small; }
+
+a:hover {
+  color: yellow; }
+
+.weatherman {
+  display: auto; }
+
+.img-hover {
+  color: gold;
+  size: auto;
+  display: swap; }
+
+.current-page {
+  font-weight: bold;
+  font-size: large;
+  color: lighten;
+  text-decoration: underline overline;
+  text-decoration-style: solid; }
+
+body {
+  color: #929296;
+  background-color: #091a31;
+  font-family: Arial, 'Arial Narrow',sans-serif Helvetica, sans-serif;
+  text-align: center; }
+
+.para {
+  line-height: 1.0;
+  /* line  adjustment very percisely */
+  text-align: justify;
+  font-size: 16px; }
+
+
+  .WeatherContainer
+{
+display: inline-block;
+align-items: center;
+}
+.Weather
+{
+  border:1px solid gold;
+  border-collapse: inherit;
+  min-width: 300px;
+
+}
+.footer
+{
+  height:50px;
+  border-top:1px dotted white;
+  font-size: 16pt;
+  color:white;
+  padding-top:10px;
+  padding-bottom: 10px;
+  
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 8px;
+    color: #929296;
+    background-color: #093110;
+    font-family: Arial, 'Arial Narrow',sans-serif Helvetica, sans-serif;
+    text-align: center; }
+
+  #nav-bar-div {
+    display: list-item; }
+
+  #ul-list li {
+    display: list-item;
+    text-align: left;
+    color: yellow; }
+
+  #nav-bar {
+    border: 5px inset #8970da;
+    padding: 30px;
+    size: 10%; }
+
+  .master {
+    width: 100%; }
+
+  head1 {
+    font-size: 17px; } 
+  
+  }
+/* end of media: mobile responsive*/
+span {
+  color: #e22121;
+  font-weight: thin;
+  font-style: normal; }
+
+.anchor {
+  color: red; }
+
+.master {
+  width: 50%; }
+
+.master-emoji {
+  width: 20%;
+  align-self: auto; }
+
+h1 {
+  font-size: 60px; }
+
+footer {
+  
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:50px;
+  width:100%;
+  background: aliceblue;
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+  font-style: italic;
+  background-color: teal;
+  text-align: center;
+  color: black; }
+
+.div-text::selection {
+  color: red;
+  background-color: yellow; }
+
+.div-text {
+  display: contents;
+  text-align: justify;
+  text-indent: -0em;
+  text-justify: inter-word;
+  font-size: small; }
+
+.grid {
+  background-color: teal;
+  display: grid;
+  padding: 2px;
+  grid-column-gap: 20px;
+  grid-row-gap: 2px;
+  grid-template-columns: auto auto;
+  /* both could be auto or both max-content or min-content */
+  grid-template-rows: max-content max-content; }
+
+/*I Used the grid-template-rows property to define the size of the rows in a grid layout.
+The first row in this grid is 20px high, and the second row is also 20px */
+.grid-item {
+  background-color: #929296;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  color: black; }
+
+.email {
+  color: #7c0909; }
+
+.row > div {
+  padding: 5px;
+  background-color: teal;
+  border: 2px solid maroon;
+  color: blanchedalmond; }
+
+/*
+textarea{
+  background-color: $bak-color;
+  color: $for-color;
+  
+}
+.inline-email {
+  color: rgb(139, 202, 14);
+}
+form > p {
+  color: rgb(139, 202, 14);
+}*/
+.row1 > div {
+  padding: 5px;
+  border: 2px solid maroon;
+  color: blanchedalmond; }
+
+th, td {
+  font-size: 12px;
+  text-align: center;
+  border: 0px solid burlywood;
+  padding: 5px; }
+
+tr > th {
+  text-align: center;
+  font-size: 10px; }
+
+th {
+  font-weight: bold;
+  color: red; }
+
+tr:nth-child(even) {
+  background-color: #0a44fd;
+  color: white; }
+
+.symbol {
+  display: block;
+  width: 75%;
+  text-align: center; }
+
+

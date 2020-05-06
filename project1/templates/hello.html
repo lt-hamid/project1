@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+    Hello Page 
+{% endblock %}
+
+{% block body %}
+     <h1> This is my Hello Page </h1>   
+    <h2>Hello!,  {{ name }}!</h2>
+     <img class="master-emoji" src= "{{ url_for('static', filename='images/smiling-sun2.jpg') }} ">
+{% endblock %}
