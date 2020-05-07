@@ -1,0 +1,57 @@
+-------------~/edx.course/project1/src2/forms/templates/all.txt---------------------
+APPLICATION: application.py
+---------------------------
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
+@app.route("/hello", methods=["POST"])
+def hello():
+    name = request.form.get("name")
+    return render_template("hello.html", name=name)
+
+----------------index.html--------------------------------------------
+
+{% block heading %}
+    First Page
+{% endblock %}
+
+{% block body %}
+    <form action="{{ url_for('hello') }}" method="post">
+        <input type="text" name="name" placeholder="Enter Your Name">
+        <button>Submit</button>
+    </form>
+{% endblock %}
+
+-------------------------layout.htnl-----------------------------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Website!</title>
+    </head>
+    <body>
+        <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
+
+-------------------------hello.html------------------------------------------------
+
+{% extends "layout.html" %}
+
+{% block heading %}
+    Hello!
+{% endblock %}
+
+{% block body %}
+    Hello, {{ name }}!
+{% endblock %}
+
+--------------------------------------------------------------------------

@@ -1,0 +1,19 @@
+ <link rel="stylesheet" href= "{{ url_for('static', filename='style.css') }}">
+
+ <input name="user-name" id="user-name" type="text"
+                            class="SignInFormField" size="25" maxlength="25"
+                            autocomplete="on" placeholder="at least 8 characters"
+                            autofocus="autofocus" required />
+
+    {%footer block%}
+
+<p>CS50's Web Programming with Python and JavaScript</p>
+<p>Posted by: Hamid Ashkan ......
+Contact information: <a class="email" href="mailto:Lt_hamid@yahoo.com?&bcc=hamid.ashkan@gmail.com&subject=Mail from Weather.Report Website&body=Enter your message text here">Send Email</a>
+</p>
+
+    {%endblock%}
+
+    
+
+               
